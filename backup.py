@@ -39,7 +39,7 @@ class Backup(object):
         password = config.get('password')
 
         if password:
-            command += ' -p' + password
+            command += ' -p"' + password + '"'
 
         temp_backup_location = '/tmp/' + dump_file
 
